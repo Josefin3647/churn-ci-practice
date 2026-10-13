@@ -13,3 +13,6 @@ def test_malvariabeln_ar_binar():
 
 def test_kund_id_ar_unikt():
     assert las_data()["kund_id"].is_unique
+
+def test_alder_ar_rimligt():
+    assert las_data()["alder"].between(18, 110).all()
