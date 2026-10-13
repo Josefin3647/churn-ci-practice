@@ -10,3 +10,6 @@ def test_forvantade_kolumner_finns():
 
 def test_malvariabeln_ar_binar():
     assert set(las_data()[MAL].unique()) <= {0, 1}
+
+def test_kund_id_ar_unikt():
+    assert las_data()["kund_id"].is_unique
