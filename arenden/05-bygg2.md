@@ -11,5 +11,5 @@ servern under året, så koden måste fungera på 3.11, 3.12 och 3.13.
    testerna är gröna. Träningen ska köras på samma version som servern.
 
 **Klart när:**
-- [ ] Tre testjobb syns i körningen, ett per Python-version.
-- [ ] Träningen är ett eget jobb som väntar på testerna.
+- [x] Tre testjobb syns i körningen, ett per Python-version.
+- [x] Träningen är ett eget jobb som väntar på testerna.
