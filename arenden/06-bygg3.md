@@ -10,7 +10,7 @@ nivåer i `tests/`, men de täcker för lite.
 | --- | --- | --- |
 | Kod | `tests/test_features.py` | Regionnamn med versaler, som `STOCKHOLM`, blir `Stockholm` |
 | Data | `tests/test_data.py` | `kund_id` är unikt, åldern ligger i ett rimligt intervall |
-| Modell | `tests/test_model.py` | ROC AUC är minst 0,70, och modellen slår en `DummyClassifier` |
+| Modell | `tests/test_model.py` | ROC AUC är minst 0,70 modellen slår en `DummyClassifier` |
 
 **Tänk på:** accuracy duger inte som mått här. Ungefär 81 % av kunderna är kvar, så en
 modell som gissar "ingen slutar" får redan 0,81 i accuracy.
