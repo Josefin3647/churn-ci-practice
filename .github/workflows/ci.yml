@@ -36,4 +36,7 @@ jobs:
 
       - run: python -m churn.model  
 
-      
+      - uses: actions/upload-artifact@v7
+        with: 
+          name: modell-${{ github.sha }}
+          path: outputs/
