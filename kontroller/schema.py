@@ -23,7 +23,8 @@ def main(fil: str) -> int:
     try:
         SCHEMA.validate(df, lazy=True)
     except pa.errors.SchemaErrors as e:
-        print(f"STOPP: {fil} har inte rätt format")
+        print(f"STOPP: {fil} har inte rätt format\n")
+        print(e.failure_cases[["column", "check"]].value_counts().to_string())
         return 1
     print(f"OK: {fil} ({len(df)} rader)")
     return 0
